@@ -1,3 +1,4 @@
+import HomePage from "../pages/homepage";
 import App from "../App";
 import CartPage from "../pages/CartPage";
 import ErrorPage from "../pages/ErrorPage";
@@ -9,6 +10,10 @@ const routes = [
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
       {
         path: "/shop",
         element: <ShopPage />,

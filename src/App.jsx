@@ -8,20 +8,21 @@ import {
 const App = () => {
   return (
     <div>
-      <h1>Andrew's Shop</h1>
-      <p>A few images</p>
-      <p>information</p>
-      <nav>
-        <ul>
-          <li>
-            <Link to="shop">Shop</Link>
-          </li>
-          <li>
-            <Link to="cart">Cart</Link>
-          </li>
-        </ul>
-      </nav>
-      <Outlet />
+      <div className="nav-bar">
+        <div className="nav-logo">
+          <div className="favicon"></div>
+        </div>
+        <div className="nav-menu">
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="shop">Shop</Link></li>
+            <li><Link to="cart">Cart</Link></li>
+          </ul>
+        </div>
+      </div>
+      <div className="content">
+        <Outlet />
+      </div>
     </div>
   );
 };
